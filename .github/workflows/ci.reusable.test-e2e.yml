@@ -13,7 +13,7 @@ jobs:
     runs-on: ${{ inputs.os }}
     strategy:
       matrix:
-        browser: [chrome, firefox, edge]
+        browser: [chrome] # TODO: Add more browsers (firefox, edge) after switching from Cypress to Playwright
       fail-fast: false
 
     steps:
